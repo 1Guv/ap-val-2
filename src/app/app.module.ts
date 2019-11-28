@@ -18,6 +18,7 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from 'app/services/auth-guard.service';
 import { ValuationComponent } from './views/valuation/valuation.component';
 import { AppMaterialModule } from './app-material/app-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AppMaterialModule } from './app-material/app-material.module';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    BrowserAnimationsModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
