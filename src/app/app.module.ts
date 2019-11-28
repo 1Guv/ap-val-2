@@ -14,21 +14,24 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
-
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from 'app/services/auth-guard.service';
+import { ValuationComponent } from './views/valuation/valuation.component';
+import { AppMaterialModule } from './app-material/app-material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ValuationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutes,
+    AppMaterialModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],

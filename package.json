@@ -1,5 +1,5 @@
 {
-  "name": "angular2-authentication-firebase",
+  "name": "ap-val-1.0.0",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -25,14 +25,14 @@
     "angularfire2": "^4.0.0-rc.1",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "firebase": "^4.2.0",
+    "firebase": "^7.5.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.2.0",
+    "@angular/cli": "^8.3.20",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "~2.5.53",
